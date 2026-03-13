@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Clembert Partners</title>
+    <meta name="description" content="Speak with Clembert Partners to discuss your legal and regulatory needs.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--surface-border);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            transition: all var(--transition-fast);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-info-item {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info-item h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info-item p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+
+<body>
+    <app-header></app-header>
+
+    <!-- Page Header -->
+    <header class="section" style="padding-top: 10rem; padding-bottom: 4rem; text-align: center;">
+        <div class="container fade-up">
+            <h1 class="section-title" style="margin-bottom: 0.5rem;">Contact Clembert Partners</h1>
+            <p class="section-subtitle">We welcome enquiries from founders, investors, lenders, and businesses seeking
+                legal guidance.</p>
+        </div>
+    </header>
+
+    <!-- Contact Form & Info -->
+    <section class="section pt-0">
+        <div class="container fade-up">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 6rem;">
+
+                <!-- Contact Information -->
+                <div>
+                    <h3 style="font-size: 2rem; margin-bottom: 2rem;">Get in Touch</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.1rem;">Reach out to our
+                        team via email or phone, or submit the form and we will respond promptly.</p>
+
+                    <div class="contact-info-item">
+                        <h4>Email</h4>
+                        <p>clembertpartners@gmail.com</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h4>Phone</h4>
+                        <p>+234 812 110 1333</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h4>Office Address</h4>
+                        <p>78 Lome Crescent, Wuse Zone 7</p>
+                    </div>
+
+                    <div style="margin-top: 4rem;">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clembertpartners@gmail.com&su=Consultation%20Request" target="_blank"
+                            class="btn btn-primary" style="width: 100%;">Book a Consultation
+                            Direct</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="card" style="padding: 3rem;">
+                    <!-- To make this work: Replace 'YOUR_FORMSPREE_ID' with your ID from formspree.io -->
+                    <form action="https://formspree.io/f/mwvrbjwd" method="POST">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" name="full_name" class="form-control" placeholder="John Doe"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" name="_replyto" class="form-control"
+                                placeholder="john@company.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="company">Company / Organization</label>
+                            <input type="text" id="company" name="company" class="form-control"
+                                placeholder="Company Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">How can we help you?</label>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="Briefly describe your legal or regulatory needs..." required></textarea>
+                        </div>
+
+                        <!-- Anti-spam -->
+                        <input type="text" name="_gotcha" style="display:none" />
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send
+                            Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Areas | Clembert Partners</title>
+    <meta name="description"
+        content="Clembert Partners provides legal advisory services across key areas relevant to modern businesses operating in regulated and cross-border environments.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .service-list {
+            margin-top: 1.5rem;
+        }
+
+        .service-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .service-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .practice-section {
+            padding: 5rem 0;
+            border-bottom: 1px solid var(--surface-border);
+        }
+
+        .practice-section:last-child {
+            border-bottom: none;
+        }
+
+        .practice-section:nth-child(even) {
+            background-color: var(--bg-surface);
+        }
+    </style>
+</head>
+
+<body>
+    <app-header></app-header>
+
+    <!-- Page Header -->
+    <header class="section" style="padding-top: 10rem; padding-bottom: 3rem; text-align: center;">
+        <div class="container fade-up">
+            <h1 class="section-title" style="margin-bottom: 0.5rem;">Our Practice Areas</h1>
+            <p class="section-subtitle">Clembert Partners provides legal advisory services across key areas relevant to
+                modern businesses operating in regulated and cross-border environments.</p>
+        </div>
+    </header>
+
+    <!-- Detailed Practice Areas -->
+    <div>
+        <!-- FinTech -->
+        <div class="practice-section" id="fintech">
+            <div class="container fade-up">
+                <div class="grid" style="grid-template-columns: 2fr 3fr; gap: 4rem; align-items: start;">
+                    <div>
+                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">🏛️</div>
+                        <h2 style="font-size: 2rem; margin-bottom: 1rem;">FinTech & Non-Bank Lending</h2>
+                        <a href="contact.html" class="btn btn-secondary mt-2">Get Advisory</a>
+                    </div>
+                    <div>
+                        <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text-primary);">We advise
+                            FinTech companies and non-bank lenders on legal and regulatory matters affecting lending
+                            operations.</p>
+                        <h4 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem;">Services
+                            include:</h4>
+                        <ul class="service-list">
+                            <li>Regulatory advisory for lending businesses</li>
+                            <li>Licensing and registration advisory</li>
+                            <li>Structuring compliant lending operations</li>
+                            <li>Regulatory compliance advisory</li>
+                            <li>Advisory on regulatory investigations and enforcement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Regulatory Compliance -->
+        <div class="practice-section" id="compliance">
+            <div class="container fade-up">
+                <div class="grid" style="grid-template-columns: 2fr 3fr; gap: 4rem; align-items: start;">
+                    <div>
+                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">⚖️</div>
+                        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Regulatory Compliance & Advisory</h2>
+                        <a href="contact.html" class="btn btn-secondary mt-2">Get Advisory</a>
+                    </div>
+                    <div>
+                        <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text-primary);">We help
+                            businesses understand regulatory obligations and maintain compliant operations.</p>
+                        <h4 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem;">Services
+                            include:</h4>
+                        <ul class="service-list">
+                            <li>Regulatory compliance advisory</li>
+                            <li>Regulatory risk assessment</li>
+                            <li>Advisory on regulatory engagement and investigations</li>
+                            <li>Compliance structuring and governance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corporate Structuring -->
+        <div class="practice-section" id="corporate">
+            <div class="container fade-up">
+                <div class="grid" style="grid-template-columns: 2fr 3fr; gap: 4rem; align-items: start;">
+                    <div>
+                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">🏢</div>
+                        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Corporate & Investment Structuring</h2>
+                        <a href="contact.html" class="btn btn-secondary mt-2">Get Advisory</a>
+                    </div>
+                    <div>
+                        <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text-primary);">We advise
+                            founders and investors on structuring businesses and investments.</p>
+                        <h4 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem;">Services
+                            include:</h4>
+                        <ul class="service-list">
+                            <li>Company formation and structuring</li>
+                            <li>Shareholding and ownership structuring</li>
+                            <li>Investment structuring</li>
+                            <li>Corporate governance advisory</li>
+                            <li>Commercial agreements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dispute Resolution -->
+        <div class="practice-section" id="dispute">
+            <div class="container fade-up">
+                <div class="grid" style="grid-template-columns: 2fr 3fr; gap: 4rem; align-items: start;">
+                    <div>
+                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">🛑</div>
+                        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Dispute Resolution</h2>
+                        <a href="contact.html" class="btn btn-secondary mt-2">Get Advisory</a>
+                    </div>
+                    <div>
+                        <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text-primary);">We represent
+                            clients in commercial and regulatory disputes.</p>
+                        <h4 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem;">Services
+                            include:</h4>
+                        <ul class="service-list">
+                            <li>Commercial dispute resolution</li>
+                            <li>Regulatory dispute resolution</li>
+                            <li>Contractual disputes</li>
+                            <li>Debt recovery and lending disputes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cross-Border -->
+        <div class="practice-section" id="cross-border">
+            <div class="container fade-up">
+                <div class="grid" style="grid-template-columns: 2fr 3fr; gap: 4rem; align-items: start;">
+                    <div>
+                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+                        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Cross-Border Trade & Transactions</h2>
+                        <a href="contact.html" class="btn btn-secondary mt-2">Get Advisory</a>
+                    </div>
+                    <div>
+                        <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text-primary);">We advise
+                            clients on legal aspects of cross-border business and transactions.</p>
+                        <h4 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem;">Services
+                            include:</h4>
+                        <ul class="service-list">
+                            <li>Market entry advisory</li>
+                            <li>Cross-border investment structuring</li>
+                            <li>Cross-border commercial transactions</li>
+                            <li>Advisory for international clients entering African markets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <section class="section cta-section mt-2">
+        <div class="container fade-up">
+            <h2>Need Specific Legal Guidance?</h2>
+            <p>Speak with Clembert Partners to discuss your legal and regulatory needs.</p>
+            <div class="hero-actions" style="justify-content: center;">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clembertpartners@gmail.com&su=Consultation%20Request" target="_blank" class="btn btn-primary">Book a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
