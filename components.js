@@ -14,15 +14,20 @@ class AppHeader extends HTMLElement {
                     <a href="contact.html" class="nav-link">Contact</a>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clembertpartners@gmail.com&su=Consultation%20Request" target="_blank" class="btn btn-primary" style="margin-left: 1rem;">Book a Consultation</a>
                 </div>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </nav>
         `;
 
         // Highlight active link
         const currentPath = window.location.pathname;
         const page = currentPath.split('/').pop() || 'index.html';
-        const navLinks = this.querySelectorAll('.nav-link');
+        const navLinkElements = this.querySelectorAll('.nav-link');
 
-        navLinks.forEach(link => {
+        navLinkElements.forEach(link => {
             if (link.getAttribute('href') === page) {
                 link.classList.add('active');
             } else {
@@ -40,6 +45,30 @@ class AppHeader extends HTMLElement {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const hamburger = this.querySelector('.hamburger');
+        const navLinks = this.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside or on a link
+        document.addEventListener('click', (e) => {
+            if (!this.contains(e.target)) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.classList.contains('nav-link') || e.target.classList.contains('btn')) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
             }
         });
     }
